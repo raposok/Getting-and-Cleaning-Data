@@ -3,7 +3,7 @@
 ## Data Source
 Original source of data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## Dataset Files
+## Dataset Files (Original Data)
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features.
@@ -12,6 +12,13 @@ Original source of data: https://d396qusza40orc.cloudfront.net/getdata%2Fproject
 - 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
+ 
+## Dataset Files (Processed Data)
+- 'Code Book.md': Code book.
+- 'result_tidy_data_avg.txt': Final resulting output for this assignment.
+- 'run_analysis.R': R script that cleans data.
+- 'SYX_merged_clean_data.txt': Interim output for this assignment.
+- 'README.md': Description of how run_analysis.R works.
 
 ## Variables and Units (During Processing)
 Variables and units generated during processing.
@@ -20,15 +27,21 @@ Variables and units generated during processing.
 Variable         | Description
 -----------------|------------
      S           | ID of the subject performing an activity. Range is from 1 to 30. 
-     X           | Training data with labels.
-     Y           | Test data with labels.
-     SYX         | Training, testing data for Subjects.
+     X           | Training data with labels. Refer to Feature Selection for details on the variables used and units.
+     Y           | Test data with labels. Refer to Feature Selection for details on the variables used and units.
+     SYX         | Training, testing data for Subjects. Refer to Feature Selection for details on the variables used and units.
      activities  | Activities performed. See Activity Labels below for details.
-     features    | Feature data collected from accelerometer and gyroscope for the Subjects. Refer to Feature Selection below for details.
+     features    | Feature data collected from accelerometer and gyroscope for the Subjects. Refer to Feature Selection for details on the variables used and units.
 
+####Summaries calculated
+Summary             | Desciption
+--------------------|------------
+     numActivities  | Number of Activities
+     numVARs        | Number of Columns
+     numSubjects    | Number of Subjects
 
 ## Variables and Units (Original Data)
-Variables and units for the original data.
+Variables and units for the original data. 
 
 ####Activity Labels
 Activity Code    | Activity Label
@@ -39,13 +52,6 @@ Activity Code    | Activity Label
      4           | SITTING
      5           | STANDING
      6           | LAYING
-
-####Summaries calculated
-Summary             | Desciption
---------------------|------------
-     numActivities  | Number of Activities
-     numVARs        | Number of Columns
-     numSubjects    | Number of Subjects
 
 ####Features Selection
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
