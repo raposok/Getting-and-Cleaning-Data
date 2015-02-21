@@ -3,8 +3,48 @@
 ## Data Source
 Original source of data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## Variables and Units
+## Dataset Files
+- 'README.txt'
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+- 'features.txt': List of all features.
+- 'activity_labels.txt': Links the class labels with their activity name.
+- 'train/X_train.txt': Training set.
+- 'train/y_train.txt': Training labels.
+- 'test/X_test.txt': Test set.
+- 'test/y_test.txt': Test labels.
+
+## Variables and Units (During Processing)
+Variables and units generated during processing.
+
+####Variable list
+Variable         | Description
+-----------------|------------
+     S           | ID of the subject performing an activity. Range is from 1 to 30. 
+     X           | Training data with labels.
+     Y           | Test data with labels.
+     SYX         | Training, testing data for Subjects.
+     activities  | Activities performed. See Activity Labels below for details.
+     features    | Feature data collected from accelerometer and gyroscope for the Subjects. Refer to Feature Selection below for details.
+     result      |
+     tests       |
+     testx       |
+     testy       |
+     trains      |
+     trainx      |
+     trainy      |
+
+## Variables and Units (Original Data)
 Variables and units for the original data.
+
+####Activity Labels
+Activity Code    | Activity Label
+-----------------|------------
+     1           | WALKING
+     2           | WALKING_UPSTAIRS
+     3           | WALKING_DOWNSTAIRS
+     4           | SITTING
+     5           | STANDING
+     6           | LAYING
 
 ####Features Selection
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -62,15 +102,6 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 - tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
-
-####Activity Labels
-- Activity Code   Activity Label
-- 1    WALKING
-- 2    WALKING_UPSTAIRS
-- 3    WALKING_DOWNSTAIRS
-- 4    SITTING
-- 5    STANDING
- -6    LAYING
 
 ## Study Design
 The following information was taken from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
