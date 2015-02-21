@@ -1,5 +1,15 @@
 # Getting-and-Cleaning-Data
-Coursera: Getting and Cleaning Data Project
+This repository contains the R script, code book, and resulting scrip output for the Getting and Cleaning Data course Project. For Project details, refer to Coursera: Getting and Cleaning Data Project instructions below.
+
+## Instructions for running the script
+1. Download the data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2. Unzip the data to your working directory, <wkdir>.
+3. Add run_analysis.R to <wkdir>\UCI HAR Dataset folder.
+4. In RStudio set your working directory to <wkdir>.
+5. Run run_analysis.R.
+6. To view a tidy data set with the average of each variable for each activity and each subject, open result_tidy_data_avg.txt.
+
+## Coursera: Getting and Cleaning Data Project instructions
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 
 1) a tidy data set as described below 
