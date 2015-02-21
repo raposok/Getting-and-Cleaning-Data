@@ -3,9 +3,9 @@ This repository contains the R script, code book, and resulting scrip output for
 
 ## Instructions for running the script
 1. Download the data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2. Unzip the data to your working directory, <wkdir>.
-3. Add run_analysis.R to <wkdir>\UCI HAR Dataset folder.
-4. In RStudio set your working directory to <wkdir>.
+2. Unzip the data to your working directory, "wkdir".
+3. Add run_analysis.R to "wkdir"\UCI HAR Dataset folder.
+4. In RStudio set your working directory to "wkdir">.
 5. Run run_analysis.R.
 6. To view a tidy data set with the average of each variable for each activity and each subject, open result_tidy_data_avg.txt.
 
